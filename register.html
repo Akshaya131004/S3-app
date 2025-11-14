@@ -45,12 +45,6 @@
           <input type="email" id="emailInputRegister" placeholder="Email" required>
           <input type="password" id="passwordInputRegister" placeholder="Password" required>
           <input type="password" id="password2InputRegister" placeholder="Confirm Password" required> 
-
-          <!-- ✅ Added Google Sign-In Button -->
-          <button id="googleSignInBtn" class="google-btn" type="button">
-              CONTINUE WITH GOOGLE
-          </button>
-
           <input type="submit" value="Let's Ryde">
         </form>
     </section>
@@ -61,13 +55,6 @@
     <script src="js/vendor/amazon-cognito-identity.min.js"></script>
     <script src="js/config.js"></script>
     <script src="js/cognito-auth.js"></script>
-
-    <!-- ✅ Button Click Redirect Script -->
-    <script>
-        document.getElementById("googleSignInBtn").addEventListener("click", function() {
-            window.location.href = "ride.html";
-        });
-    </script>
-
 </body>
 </html>
+
